@@ -1,0 +1,3 @@
+- insert:
+    - id: pal-dsh-pet
+      name: '@local/pal-dsh-pet'

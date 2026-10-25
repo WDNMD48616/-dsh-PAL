@@ -1,0 +1,30 @@
+{
+  "name": "@local/pal-dsh-pet",
+  "version": "1.7.6",
+  "private": true,
+  "type": "module",
+  "description": "帕尔：由 DSH 插件管理的唯一置顶透明窗口，可以出现在电脑任意位置。",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.png"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.png",
+    "PalPet.exe"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true
+    }
+  }
+}
